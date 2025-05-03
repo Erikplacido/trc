@@ -1,0 +1,228 @@
+/* Reset Básico */
+body {
+  margin: 0;
+  background-color: #11284B;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
+  gap: 20px;
+  color: white;
+}
+
+/* Header atualizado */
+header.main-header {
+  border-radius: 16px;
+  background-color: #344966;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding-bottom: 20px; /* só padding inferior agora */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.header-banner {
+  margin: 0 -20px; /* anula padding lateral do .main-header */
+  height: 100px;
+  overflow: hidden;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 0;
+}
+
+/* Nav interna do header */
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.logo-link {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.logo-link strong {
+  color: #F0D71A;
+}
+
+.header-actions button {
+  background-color: #11284B;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+/* Botões agora alinhados corretamente */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* espaço entre os botões */
+  padding-right: 15px; /* afasta dos cantos do header */
+}
+
+.header-actions button:hover {
+  background-color: #1a3b6e;
+}
+
+/* Menu Conta */
+.account-menu {
+  position: relative;
+  z-index: 10; /* força acima de quase tudo */
+}
+
+.account-dropdown {
+  z-index: 10000 !important;
+  background-color: #344966;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  display: none;
+  border-radius: 8px;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.account-dropdown-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.account-dropdown-menu li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 8px 12px;
+  font-size: 1rem;
+}
+
+/* Área do Meio */
+.middle {
+  display: flex;
+  gap: 20px;
+  height: 25%;
+}
+
+.middle > div {
+  flex: 1;
+  background-color: #344966;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  overflow-y: auto;
+  font-size: 1rem;
+}
+
+/* Área Inferior */
+.bottom {
+  flex: 1;
+  background-color: #344966;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  overflow-x: auto;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.modal-content {
+  background-color: #11284B;
+  margin: 5% auto;
+  padding: 30px;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 16px;
+  position: relative;
+  color: white;
+}
+
+.close-button {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Inputs e Selects */
+input[type="text"],
+select {
+  width: 100%;
+  padding: 8px 10px;
+  margin: 5px 0;
+  border-radius: 8px;
+  border: none;
+  background-color: #22375a;
+  color: white;
+  font-size: 1rem;
+}
+
+input[readonly],
+select[disabled] {
+  background-color: #22375a;
+  color: #ffffff;
+}
+
+/* Tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+thead {
+  background-color: #22375a;
+}
+
+thead th {
+  text-align: left;
+  padding: 10px;
+  font-size: 1rem;
+  color: #F0D71A;
+}
+
+tbody td {
+  padding: 10px;
+  border-top: 1px solid #22375a;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .middle {
+    flex-direction: column;
+    height: auto;
+  }
+}

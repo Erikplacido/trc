@@ -1,0 +1,92 @@
+[30-Apr-2025 14:59:32 UTC] Raw JSON recebido: {"referral_code":"ERIK42","referred":"teste200","referred_last_name":"teste","email":"teste@teste.com","mobile":"11 22 3333 4444","postcode":"3002","client_type":"Company","service_name":"Handyman","more_details":"teste","user_id":"1"}
+[30-Apr-2025 14:59:32 UTC] Received Payload: Array
+(
+    [referral_code] => ERIK42
+    [referred] => teste200
+    [referred_last_name] => teste
+    [email] => teste@teste.com
+    [mobile] => 11 22 3333 4444
+    [postcode] => 3002
+    [client_type] => Company
+    [service_name] => Handyman
+    [more_details] => teste
+    [user_id] => 1
+)
+
+[30-Apr-2025 14:59:51 UTC] Raw JSON recebido: {"referral_code":"ERIK42","referred":"teste200","referred_last_name":"teste","email":"teste@teste.com","mobile":"11 22 3333 4444","postcode":"3002","client_type":"Company","service_name":"Handyman","more_details":"teste","user_id":"1"}
+[30-Apr-2025 14:59:51 UTC] Received Payload: Array
+(
+    [referral_code] => ERIK42
+    [referred] => teste200
+    [referred_last_name] => teste
+    [email] => teste@teste.com
+    [mobile] => 11 22 3333 4444
+    [postcode] => 3002
+    [client_type] => Company
+    [service_name] => Handyman
+    [more_details] => teste
+    [user_id] => 1
+)
+
+[30-Apr-2025 14:59:51 UTC] Duplicate submission blocked for teste@teste.com - Handyman
+[30-Apr-2025 15:00:01 UTC] Raw JSON recebido: {"referral_code":"ERIK42","referred":"teste200","referred_last_name":"teste","email":"teste@teste.com","mobile":"11 22 3333 4444","postcode":"3002","client_type":"Company","service_name":"Handyman","more_details":"teste","user_id":"1"}
+[30-Apr-2025 15:00:01 UTC] Received Payload: Array
+(
+    [referral_code] => ERIK42
+    [referred] => teste200
+    [referred_last_name] => teste
+    [email] => teste@teste.com
+    [mobile] => 11 22 3333 4444
+    [postcode] => 3002
+    [client_type] => Company
+    [service_name] => Handyman
+    [more_details] => teste
+    [user_id] => 1
+)
+
+[30-Apr-2025 15:00:01 UTC] Duplicate submission blocked for teste@teste.com - Handyman
+[30-Apr-2025 15:02:26 UTC] Raw JSON recebido: {"referral_code":"ERIK42","referred":"teste300","referred_last_name":"teste","email":"teste@teste.com","mobile":"11 22 3333 4444","postcode":"3002","client_type":"Home","service_name":"Gardening","more_details":"teste","user_id":"1"}
+[30-Apr-2025 15:02:26 UTC] Received Payload: Array
+(
+    [referral_code] => ERIK42
+    [referred] => teste300
+    [referred_last_name] => teste
+    [email] => teste@teste.com
+    [mobile] => 11 22 3333 4444
+    [postcode] => 3002
+    [client_type] => Home
+    [service_name] => Gardening
+    [more_details] => teste
+    [user_id] => 1
+)
+
+[30-Apr-2025 15:03:10 UTC] Raw JSON recebido: {"referral_code":"ERIK42","referred":"teste400","referred_last_name":"teste","email":"teste@teste.com","mobile":"11 22 3333 4444","postcode":"3002","client_type":"Home","service_name":"Steam Cleaning","more_details":"nada","user_id":"1"}
+[30-Apr-2025 15:03:10 UTC] Received Payload: Array
+(
+    [referral_code] => ERIK42
+    [referred] => teste400
+    [referred_last_name] => teste
+    [email] => teste@teste.com
+    [mobile] => 11 22 3333 4444
+    [postcode] => 3002
+    [client_type] => Home
+    [service_name] => Steam Cleaning
+    [more_details] => nada
+    [user_id] => 1
+)
+
+[01-May-2025 19:57:39 UTC] Raw JSON recebido: {"referral_code":"ERIK42","referred":"Adriane","referred_last_name":"Teste","email":"email1@email.com","mobile":"11 22 3333 4444","postcode":"3000","client_type":"Home","service_name":"Gardening","more_details":"Jardim","user_id":"1"}
+[01-May-2025 19:57:39 UTC] Received Payload: Array
+(
+    [referral_code] => ERIK42
+    [referred] => Adriane
+    [referred_last_name] => Teste
+    [email] => email1@email.com
+    [mobile] => 11 22 3333 4444
+    [postcode] => 3000
+    [client_type] => Home
+    [service_name] => Gardening
+    [more_details] => Jardim
+    [user_id] => 1
+)
+
