@@ -38,7 +38,7 @@ $checkEarnings->bind_param("s", $earnings_view_name);
 $checkEarnings->execute();
 $checkEarnings->store_result();
 if ($checkEarnings->num_rows > 0) {
-    $stmt = $conn->prepare("SELECT total_earnings FROM `$earnings_view_name` WHERE user_id = ?");
+    $stmt = $conn->prepare("SELECT total_earnings FROM $earnings_view_name WHERE user_id = ?");
     $stmt->bind_param("i", $user_id);
     $stmt->execute();
     $stmt->bind_result($commission_amount);
@@ -129,7 +129,7 @@ $check->execute();
 $check->store_result();
 
 if ($check->num_rows > 0) {
-    $stmt = $conn->prepare("SELECT total_earnings FROM `$upcoming_view_name` WHERE user_id = ?");
+    $stmt = $conn->prepare("SELECT total_earnings FROM $upcoming_view_name WHERE user_id = ?");
     $stmt->bind_param("i", $user_id);
     if ($stmt->execute()) {
         $stmt->bind_result($upcoming_payment);
@@ -275,7 +275,9 @@ Your position in the referral ranking is <strong>Top <?= $position ?></strong><b
 </div>
 
 <!-- SCRIPT para interações com modal -->
+
 <script src="js/user_script.js"></script>
+
 
 </body>
 </html>

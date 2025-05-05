@@ -421,5 +421,6 @@
     </div>
   </div>
    <script src="quote/landing.js"></script>
+   <script src="emails_action/landing_send.js"></script>
 </body>
 </html>
